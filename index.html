@@ -29,7 +29,7 @@
       container.style.display = "block";
 
       AwsWafCaptcha.renderCaptcha(container, {
-        apiKey: window.WAF_API_KEY,
+        apiKey: "API_KEY",
         onSuccess: (wafToken) => captchaSuccessFunction(wafToken, N),
         onError: captchaErrorFunction,
       });
